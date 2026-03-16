@@ -1,0 +1,4 @@
+{
+  "input_path": "s3://YOUR_INPUT_BUCKET/input/hits.tab",
+  "output_path": "s3://YOUR_OUTPUT_BUCKET/output/"
+}

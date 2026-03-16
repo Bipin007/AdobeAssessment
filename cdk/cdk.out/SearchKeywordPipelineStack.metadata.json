@@ -1,0 +1,224 @@
+{
+  "/SearchKeywordPipelineStack/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+      "data": true
+    }
+  ],
+  "/SearchKeywordPipelineStack/SearchKeywordGlueJob": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SearchKeywordGlueJob"
+    }
+  ],
+  "/SearchKeywordPipelineStack/InputBucketName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "InputBucketName"
+    }
+  ],
+  "/SearchKeywordPipelineStack/OutputBucketName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OutputBucketName"
+    }
+  ],
+  "/SearchKeywordPipelineStack/StateMachineArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StateMachineArn"
+    }
+  ],
+  "/SearchKeywordPipelineStack/SuccessTopicArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SuccessTopicArn"
+    }
+  ],
+  "/SearchKeywordPipelineStack/FailureTopicArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "FailureTopicArn"
+    }
+  ],
+  "/SearchKeywordPipelineStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/SearchKeywordPipelineStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/SearchKeywordPipelineStack/InputBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "InputBucket3BF8630A"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/SearchKeywordPipelineStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+    }
+  ],
+  "/SearchKeywordPipelineStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+    }
+  ],
+  "/SearchKeywordPipelineStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+    }
+  ],
+  "/SearchKeywordPipelineStack/OutputBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OutputBucket7114EB27"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/SearchKeywordPipelineStack/PipelineSuccessTopic/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineSuccessTopicD97F0805"
+    }
+  ],
+  "/SearchKeywordPipelineStack/PipelineFailureTopic/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineFailureTopic13FBDC28"
+    }
+  ],
+  "/SearchKeywordPipelineStack/GlueJobRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GlueJobRoleF1B69418"
+    }
+  ],
+  "/SearchKeywordPipelineStack/SearchKeywordStateMachine/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SearchKeywordStateMachineEEF956DD"
+    }
+  ],
+  "/SearchKeywordPipelineStack/StartPipelineOnInputUpload/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StartPipelineOnInputUpload16648B80"
+    }
+  ],
+  "/SearchKeywordPipelineStack/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/SearchKeywordPipelineStack/CDKMetadata/Condition": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadataAvailable"
+    }
+  ],
+  "/SearchKeywordPipelineStack/InputBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "InputBucketPolicy84EF9809"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/SearchKeywordPipelineStack/InputBucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "InputBucketAutoDeleteObjectsCustomResourceE0706273"
+    }
+  ],
+  "/SearchKeywordPipelineStack/InputBucket/Notifications/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "InputBucketNotificationsA82F925B"
+    }
+  ],
+  "/SearchKeywordPipelineStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+    }
+  ],
+  "/SearchKeywordPipelineStack/OutputBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OutputBucketPolicyAE009DDC"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/SearchKeywordPipelineStack/OutputBucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OutputBucketAutoDeleteObjectsCustomResource6C7A161F"
+    }
+  ],
+  "/SearchKeywordPipelineStack/GlueJobRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GlueJobRoleDefaultPolicy94EFA0CF"
+    }
+  ],
+  "/SearchKeywordPipelineStack/SearchKeywordStateMachine/Role/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SearchKeywordStateMachineRoleC98DD485"
+    }
+  ],
+  "/SearchKeywordPipelineStack/SearchKeywordStateMachine/EventsRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SearchKeywordStateMachineEventsRoleC0FBFA9C"
+    }
+  ],
+  "/SearchKeywordPipelineStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+    }
+  ],
+  "/SearchKeywordPipelineStack/SearchKeywordStateMachine/Role/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SearchKeywordStateMachineRoleDefaultPolicy9A8F68AF"
+    }
+  ],
+  "/SearchKeywordPipelineStack/SearchKeywordStateMachine/EventsRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SearchKeywordStateMachineEventsRoleDefaultPolicy37B09B2B"
+    }
+  ]
+}
