@@ -10,7 +10,7 @@ The production path is AWS-first:
 - Glue processes the file and writes the final output to S3
 - Step Functions sends an SNS notification for success or failure
 
-The pipeline reads a tab-delimited hit-level file. The sample file in this repo is `data.sql`; when you run on AWS you upload it to the input bucket as `input/hits.tab`. The pipeline keeps rows where:
+The pipeline reads a tab-delimited hit-level file. The sample file in this repo is `data.sql`; when you run on AWS you upload it to the input bucket as `input/hits.tab`. Sample rows (lines 23–26) were added so that a run produces non-empty results: they have external-search referrers (Google, Bing, Yahoo), purchase event `1`, and positive revenue in `product_list`. The pipeline keeps rows where:
 
 - the referrer is an external search engine
 - the event list contains the purchase event
@@ -96,7 +96,7 @@ This repo maintains one implementation path only:
     └── test_glue_script.py
 ```
 
-`cdk/` exists because this project uses AWS CDK for deployment. There is no separate `infra/` folder anymore because it was redundant.
+`cdk/` exists because this project uses AWS CDK for deployment.
 
 ## Repository Layout
 
@@ -137,6 +137,8 @@ What happens locally:
 Local execution is only for development and verification. The intended runtime path for the assignment is AWS Glue.
 
 ## Run Tests
+
+Tests are run **locally** on your machine (not in the AWS account). They do not require AWS credentials or a live deployment.
 
 ```bash
 pytest tests/ -v
@@ -221,6 +223,10 @@ The AWS runtime path is designed for large files:
 - the input is read from S3 directly
 - aggregation is distributed across Spark workers
 - the job now uses Glue version `5.1`
+
+## Possible extensions
+
+This pipeline could be extended by integrating with **OTF** (open table format) and writing results into analytics tables (e.g. in a data lake or warehouse). Analytics and data science teams could then query the same data directly (e.g. via Athena, Redshift, or Spark) without re-running the job for each analysis.
 
 ## Troubleshooting
 
